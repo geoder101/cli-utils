@@ -8,6 +8,10 @@ if [ -z $PROJECT_NAME ]; then
 fi
 
 git clone --depth 1 https://github.com/fsprojects/ProjectScaffold $PROJECT_NAME
+
 cd $PROJECT_NAME
 rm -rf ./.git
-(./build.sh) && (git init) && (git add -A)
+
+(./build.sh) && \
+(git init) && \
+(git add -A)
