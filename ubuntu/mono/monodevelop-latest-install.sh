@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 sudo add-apt-repository ppa:ermshiperete/monodevelop
 sudo apt-get update
 sudo apt-get install monodevelop-current
